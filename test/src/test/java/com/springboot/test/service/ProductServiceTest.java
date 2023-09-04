@@ -1,16 +1,17 @@
-package com.springboot.test.service.impl;
+package com.springboot.test.service;
 
 import com.springboot.test.data.dto.ProductRequestDto;
 import com.springboot.test.data.dto.ProductResponseDto;
 import com.springboot.test.data.entity.Product;
 import com.springboot.test.data.repository.ProductRepository;
+import com.springboot.test.service.impl.ProductServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.AdditionalAnswers.returnsFirstArg;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;

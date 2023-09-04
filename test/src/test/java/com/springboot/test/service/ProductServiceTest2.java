@@ -1,10 +1,10 @@
-package com.springboot.test.service.impl;
+package com.springboot.test.service;
 
 import com.springboot.test.data.dto.ProductRequestDto;
 import com.springboot.test.data.dto.ProductResponseDto;
 import com.springboot.test.data.entity.Product;
 import com.springboot.test.data.repository.ProductRepository;
-import com.springboot.test.service.ProductService;
+import com.springboot.test.service.impl.ProductServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
