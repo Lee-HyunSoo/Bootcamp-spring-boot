@@ -1,6 +1,6 @@
-package com.springboot.test.data.dao;
+package com.springboot.test.repository.dao;
 
-import com.springboot.test.data.entity.Product;
+import com.springboot.test.repository.entity.Product;
 
 public interface ProductDAO {
 

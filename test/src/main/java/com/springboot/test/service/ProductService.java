@@ -1,7 +1,7 @@
 package com.springboot.test.service;
 
-import com.springboot.test.data.dto.ProductRequestDto;
-import com.springboot.test.data.dto.ProductResponseDto;
+import com.springboot.test.repository.dto.ProductRequestDto;
+import com.springboot.test.repository.dto.ProductResponseDto;
 
 public interface ProductService {
 

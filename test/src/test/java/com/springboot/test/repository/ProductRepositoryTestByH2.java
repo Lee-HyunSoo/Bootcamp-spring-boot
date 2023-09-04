@@ -1,21 +1,21 @@
-package com.springboot.test.data.repository;
+package com.springboot.test.repository;
 
-import com.springboot.test.data.entity.Product;
+import com.springboot.test.repository.entity.Product;
+import com.springboot.test.repository.repository.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * 해당 어노테이션을 통해 DB 변경 가능
- * 기본 값은 Replace.ANY 이고, 이 경우 임베디드 메모리 DB (H2 DB) 를 사용한다.
- * Replace.NONE 을 사용할 시, 어플리케이션에서 실제로 사용하는 DB 로 테스트를 한다.
+ * JPA 와 관련 된 설정만 로드
+ * @Transactional 을 포함하고 있기 때문에 테스트 종료 시 자동 Rollback
+ * 기본 값으로 임베디드 DB 사용 (H2 DB), 다른 DB 를 사용하려면 추가 설정 필요
+ * 해당 어노테이션을 통해 JPA Repository 를 주입
  */
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @DataJpaTest
-class ProductRepositoryTest {
+class ProductRepositoryTestByH2 {
 
     @Autowired
     private ProductRepository productRepository;

@@ -1,8 +1,8 @@
-package com.springboot.test.data.dao.impl;
+package com.springboot.test.repository.dao.impl;
 
-import com.springboot.test.data.dao.ProductDAO;
-import com.springboot.test.data.entity.Product;
-import com.springboot.test.data.repository.ProductRepository;
+import com.springboot.test.repository.dao.ProductDAO;
+import com.springboot.test.repository.entity.Product;
+import com.springboot.test.repository.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

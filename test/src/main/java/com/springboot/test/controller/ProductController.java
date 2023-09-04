@@ -1,9 +1,9 @@
 package com.springboot.test.controller;
 
 
-import com.springboot.test.data.dto.ChangeProductNameDto;
-import com.springboot.test.data.dto.ProductRequestDto;
-import com.springboot.test.data.dto.ProductResponseDto;
+import com.springboot.test.repository.dto.ChangeProductNameDto;
+import com.springboot.test.repository.dto.ProductRequestDto;
+import com.springboot.test.repository.dto.ProductResponseDto;
 import com.springboot.test.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

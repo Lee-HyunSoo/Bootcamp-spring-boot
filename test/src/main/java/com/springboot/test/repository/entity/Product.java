@@ -1,6 +1,5 @@
-package com.springboot.test.data.entity;
+package com.springboot.test.repository.entity;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import lombok.*;
 
 import javax.persistence.*;

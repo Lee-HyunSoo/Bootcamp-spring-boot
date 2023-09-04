@@ -1,11 +1,12 @@
-package com.springboot.test.data.repository;
+package com.springboot.test.repository;
 
-import com.springboot.test.data.entity.Product;
+import com.springboot.test.repository.entity.Product;
+import com.springboot.test.repository.repository.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 

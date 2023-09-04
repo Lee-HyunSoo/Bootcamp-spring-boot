@@ -1,8 +1,8 @@
 package com.springboot.test.controller;
 
 import com.google.gson.Gson;
-import com.springboot.test.data.dto.ProductRequestDto;
-import com.springboot.test.data.dto.ProductResponseDto;
+import com.springboot.test.repository.dto.ProductRequestDto;
+import com.springboot.test.repository.dto.ProductResponseDto;
 import com.springboot.test.service.impl.ProductServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
