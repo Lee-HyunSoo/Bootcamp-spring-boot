@@ -13,7 +13,6 @@ import java.util.List;
  */
 public class ProductRepositoryCustomImpl extends QuerydslRepositorySupport implements ProductRepositoryCustom {
 
-
     public ProductRepositoryCustomImpl() {
         super(Product.class);
     }
@@ -27,4 +26,5 @@ public class ProductRepositoryCustomImpl extends QuerydslRepositorySupport imple
                 .select(qProduct)
                 .fetch();
     }
+
 }

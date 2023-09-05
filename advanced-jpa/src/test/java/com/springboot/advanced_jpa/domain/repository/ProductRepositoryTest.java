@@ -2,6 +2,7 @@ package com.springboot.advanced_jpa.domain.repository;
 
 import com.springboot.advanced_jpa.domain.entity.Product;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -89,7 +90,6 @@ class ProductRepositoryTest {
         // then
         Assertions.assertThat(foundProduct.get(0).getName()).isEqualTo(product.getName());
     }
-
 
     /**
      * @Query("select p from Product p where p.name = :name")

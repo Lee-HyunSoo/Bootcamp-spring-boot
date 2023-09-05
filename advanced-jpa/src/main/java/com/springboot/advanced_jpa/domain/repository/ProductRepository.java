@@ -164,5 +164,4 @@ public interface ProductRepository extends JpaRepository<Product, Long>, Product
     @Query("select p.name, p.price, p.stock from Product p where p.name = :name")
     List<Tuple> findByName2(@Param("name") String name);
 
-
 }

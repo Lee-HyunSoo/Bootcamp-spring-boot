@@ -86,9 +86,9 @@ class ProductRepositoryQueryDSLTest {
         // when
         List<Product> products = queryFactory
                 .selectFrom(qProduct)
-                .where(qProduct.name.eq("펜"))
-                .orderBy(qProduct.price.asc())
-                .fetch();
+                .where(qProduct.name.eq("펜")) // where p.name = "펜"
+                .orderBy(qProduct.price.asc()) // order by price asc
+                .fetch(); // .getResultList()
 
         // then
         for (Product product : products) {
