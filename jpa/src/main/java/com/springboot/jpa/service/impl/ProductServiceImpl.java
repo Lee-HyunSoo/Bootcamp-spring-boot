@@ -60,6 +60,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductResponseDto changeProductName(Long number, String name) throws Exception {
         Product changedProduct = productDAO.updateProductName(number, name);
+        productDAO.updateProductName(number, name);
         return setProductResponseDto(changedProduct);
     }
 

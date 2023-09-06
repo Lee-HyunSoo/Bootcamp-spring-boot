@@ -6,6 +6,8 @@ import com.springboot.jpa.data.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -17,6 +19,9 @@ public class ProductDAOImpl implements ProductDAO {
      * @RequiredArgsConstructor 를 통한 생성자 주입
      */
     private final ProductRepository productRepository;
+
+    @PersistenceContext
+    private EntityManager em;
 
 //    @Autowired
 //    public ProductDAOImpl(ProductRepository productRepository) {
@@ -70,7 +75,6 @@ public class ProductDAOImpl implements ProductDAO {
         } else {
             throw new Exception();
         }
-
         return updatedProduct;
     }
 

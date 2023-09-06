@@ -1,6 +1,8 @@
 package com.springboot.jpa.data.entity;
 
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -9,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 //@Table(name = "product")
 public class Product {
 
@@ -34,4 +37,9 @@ public class Product {
 
     private LocalDateTime createdAt;
     private LocalDateTime updateAt;
+
+    public Product(Long number, String name) {
+        this.number = number;
+        this.name = name;
+    }
 }
