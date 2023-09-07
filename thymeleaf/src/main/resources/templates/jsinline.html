@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>jsinline</title>
+
+    <script th:inline="text">
+        var username = [[${username}]];
+    </script>
+</head>
+<body>
+    <h1>비활성화가 된 상태에서는 인라인 표기법인 [[...]] 로 그대로 표시</h1>
+    <p th:text="|Hello ${username}!|">greeting</p>
+    <p>Hello, <span th:text="${username}">name</span>!</p>
+    <p>Hello, [[${username}]]!</p>
+</body>
+</html>

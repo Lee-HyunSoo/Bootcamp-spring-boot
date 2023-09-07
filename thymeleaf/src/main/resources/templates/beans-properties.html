@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>beans-properties</title>
+</head>
+<body>
+    <h1>자바빈즈 프로퍼티 값</h1>
+    <table th:border="1">
+        <tr><td>${member.address}</td> <td th:text="${member.address}">address</td></tr>
+        <tr><td>${member.address.postCode}</td> <td th:text="${member.address.postCode}">postCode</td></tr>
+        <tr><td>${member.address.location}</td> <td th:text="${member.address.location}">location</td></tr>
+    </table>
+
+</body>
+</html>

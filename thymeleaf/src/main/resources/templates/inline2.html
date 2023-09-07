@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>inline2</title>
+</head>
+<body>
+    <h1>비활성화가 된 상태에서는 인라인 표기법인 [[...]] 로 그대로 표시</h1>
+    <p>Hello, [[${username}]]!</p>
+    <p th:inline="none">Hello, [[${username}]]!</p>
+</body>
+</html>

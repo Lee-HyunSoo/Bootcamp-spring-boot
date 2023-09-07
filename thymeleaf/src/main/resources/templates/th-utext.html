@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>th-utext</title>
+</head>
+<body>
+    <h1>Hello Thymeleaf!!</h1>
+    <!-- 태그를 문자열로 출력-->
+    <p th:text="${msg}">greeting</p>
+    <!-- 태그를 컴파일 하여 출력-->
+    <p th:utext="${msg}">greeting</p>
+</body>
+</html>

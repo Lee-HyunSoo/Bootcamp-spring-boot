@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>th-each</title>
+</head>
+<body>
+    <h1>배열 타압의 자바빈즈 프로퍼티 값을 반복하여 표시</h1>
+    <th:block th:each="hobby : ${member.hobbyArray}">
+        <p th:text="${hobby}">hobby</p>
+    </th:block>
+</body>
+</html>

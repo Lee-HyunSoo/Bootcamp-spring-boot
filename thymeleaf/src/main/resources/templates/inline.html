@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>inline</title>
+</head>
+<body>
+    <h1>스프링 MVC 모델에 저장 된 값을 인라인 표기법을 사용하여 표시</h1>
+    <p th:text="|Hello ${username}!|">greeting</p>
+    <p>Hello, <span th:text="${username}">name</span>!</p>
+    <p>Hello, [[${username}]]!</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>block</title>
+</head>
+<body>
+    <h1>자바빈즈 프로퍼티 값이 null 인지 체크</h1>
+    <th:th-block th:if="${member.hobbyArray == null}">
+        <p>member.hobbyArray == null</p>
+    </th:th-block>
+
+    <th:th-block th:if="${member.hobbyArray eq null}">
+        <p>member.hobbyArray eq null</p>
+    </th:th-block>
+</body>
+</html>

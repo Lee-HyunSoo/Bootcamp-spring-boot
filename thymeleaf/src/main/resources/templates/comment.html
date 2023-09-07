@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>comment</title>
+</head>
+<body>
+    <h1>타임리프 처리 후에도 템플릿에 남아있다</h1>
+    <!-- 화면에 남아있는 주석 -->
+    <h1 th:text="${msg}">greeting</h1>
+    <!--/* 화면에 남아있지 않은 주석 (파서 주석) */-->
+</body>
+</html>

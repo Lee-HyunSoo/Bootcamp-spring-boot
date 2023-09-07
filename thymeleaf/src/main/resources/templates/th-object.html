@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>th-object</title>
+</head>
+<body>
+    <h1>th:object 으로 속성 값 설정 후 선택 표현식</h1>
+    <table th:border="1" th:object="${member}">
+        <tr><td>*{userId}</td> <td th:text="*{userId}"></td></tr>
+        <tr><td>*{password}</td> <td th:text="*{password}"></td></tr>
+        <tr><td>*{userName}</td> <td th:text="*{userName}"></td></tr>
+        <tr><td>*{email}</td> <td th:text="*{email}"></td></tr>
+        <tr><td>*{dateOfBirth}</td> <td th:text="*{dateOfBirth}"></td></tr>
+    </table>
+
+</body>
+</html>

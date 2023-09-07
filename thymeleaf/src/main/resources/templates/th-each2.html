@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>th-each2</title>
+</head>
+<body>
+    <h1>배열 타압의 자바빈즈 프로퍼티 값을 반복하여 표시</h1>
+    <th:block th:each="card : ${member.cards}">
+        <label>${card.no}</label> : <span th:text="${card.no}">card.no</span> &nbsp;
+        <label>${card.validMonth}</label> : <span th:text="${card.validMonth}">card.validMonth</span>
+        <br>
+    </th:block>
+    <br>
+    <th:block th:each="card : ${member.cards}">
+        <label>${card.no}</label> : [[${card.no}]] &nbsp;
+        <label>${card.validMonth}</label> : [[${card.validMonth}]]
+        <br>
+    </th:block>
+</body>
+</html>

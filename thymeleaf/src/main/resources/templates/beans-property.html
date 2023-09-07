@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>beans-property</title>
+</head>
+<body>
+    <h1>자바빈즈 프로퍼티 값</h1>
+    <table th:border="1">
+        <tr><td>${member.userId}</td> <td th:text="${member.userId}">userId</td></tr>
+        <tr><td>${member.password}</td> <td th:text="${member.password}">password</td></tr>
+        <tr><td>${member.userName}</td> <td th:text="${member.userName}">userName</td></tr>
+        <tr><td>${member.email}</td> <td th:text="${member.email}">email</td></tr>
+        <tr><td>${member.dateOfBirth}</td> <td th:text="${member.dateOfBirth}">dateOfBirth</td></tr>
+    </table>
+
+</body>
+</html>

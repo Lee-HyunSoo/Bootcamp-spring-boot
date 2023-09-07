@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>th-with</title>
+</head>
+<body>
+    <h1>지역 변수를 선언한 후, 자바빈즈 프로퍼티 값을 그 지역변수에 대입하여 사용</h1>
+    <table th:border="1" th:with="memberId=${member.userId}">
+        <tr>
+            <td>${member.userId}</td>
+            <td th:text="${member.userId}">member.userId</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>message</title>
+</head>
+<body>
+    <h1>메세지의 키 값을 사용해 메세지 본문을 가져온다.</h1>
+    <!-- properties 파일 내 변수 사용, $ 가 아니라 # 이다. -->
+    <p th:text="#{welcome.message}">greeting</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>switch-case</title>
+</head>
+<body>
+    <h1>th:switch 속성 값을 비교하여 일치하는 값이 없으면 th:case="*" 의 HTML 요소를 표시</h1>
+    <h1>th:switch 속성 값을 비교하여 일치하는 값을 가진 th:case 의 HTML 요소를 표시</h1>
+    <div th:switch="${member.gender}">
+        <p th:case="M">male</p>
+        <p th:case="F">female</p>
+        <p th:case="*">others</p>
+    </div>
+</body>
+</html>
