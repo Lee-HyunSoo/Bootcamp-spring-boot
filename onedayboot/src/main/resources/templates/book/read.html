@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>책 상세</h1>
+    제목 : <p th:text="${book.title}"></p> <br>
+    가격 : <p th:text="${book.price}"></p> <br>
+    입력일 : <p th:text="${book.createDate}"></p> <br>
+    <a th:href="@{/book/edit/{id}(id = ${book.id})}">수정</a> <br>
+    <input type="button" value="삭제" th:onclick="|location.href='@{/book/delete/{id}(id=${book.id})}'|"> <br>
+    <a th:href="@{/}">목록</a> <br>
+
+    <br><br><br>
+
+    <div th:if="${book.bookRecords != null}">
+        <th:block th:each="record : ${book.bookRecords}">
+            <input type="text" th:value="${record.page}" readonly>
+            <input type="text" th:value="${record.date}" readonly>
+            <br>
+        </th:block>
+    </div>
+    <br>
+    <form th:action="@{/book/read/{id}(id = ${book.id})}" method="post">
+        <input name="date" type="text">
+        <input name="page" type="text">
+        <input type="submit" value="책 기록 저장">
+    </form>
+</body>
+</html>
